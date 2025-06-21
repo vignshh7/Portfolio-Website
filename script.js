@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Animate Hero Subtitle
 function animateHeroSubtitle() {
     const subtitles = [
-        "Data Analyst","Deep Learning Enthusiast",
         "Full Stack Developer",
+        "Data Analyst","Deep Learning Enthusiast",
         "Coding Enthusiast"
     ];
     const subtitleElement = document.getElementById('animated-subtitle');
