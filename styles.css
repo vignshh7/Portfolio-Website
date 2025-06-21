@@ -430,18 +430,33 @@ section {
     left: 50%;
 }
 
-.timeline-marker {
+.timeline-marker-left {
     width: 12px; /* Smaller */
     height: 12px; /* Smaller */
     background: var(--primary-color);
     border-radius: 50%;
     position: absolute;
     top: 1rem;
-    left: 50%;
+    left: 100%;
+    transform: translateX(-50%);
+    border: 2px solid var(--bg-primary);
+    top:50%;
+    z-index: 2;
+}
+.timeline-marker-right {
+    width: 12px; /* Smaller */
+    height: 12px; /* Smaller */
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    top: 50%;
+    right: 96.5%;
     transform: translateX(-50%);
     border: 2px solid var(--bg-primary);
     z-index: 2;
 }
+
 
 .timeline-content {
     background: var(--bg-card);
@@ -674,5 +689,58 @@ section {
 
     section {
         padding: 2rem 0; /* Reduced */
+    }
+}
+
+/* Add to existing styles */
+.github-link {
+    color: var(--text-secondary);
+    margin-left: 10px;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.github-link:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.project-header > div {
+    display: flex;
+    align-items: center;
+}
+
+.timeline-description {
+    padding-left: 1.5rem;
+}
+
+.timeline-description li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+
+
+/* Update existing styles */
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Add to media query */
+@media (max-width: 768px) {
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        justify-content: center;
     }
 }
