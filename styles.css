@@ -256,6 +256,23 @@ section {
 .about-text p {
     margin-bottom: 0.8rem;
 }
+/* Add to your existing CSS */
+.project-period {
+    font-size: 0.9rem;
+    color: #777;
+    margin-right: 15px;
+}
+
+
+.project-description ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.project-description li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
 
 /* Education Timeline */
 .education {
@@ -368,7 +385,7 @@ section {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     gap: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
